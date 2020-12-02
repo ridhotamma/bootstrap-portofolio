@@ -1,0 +1,194 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.container-fluid {
+  padding: 0;
+}
+.navbar {
+  min-height: 80px;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+  font-size: 30px;
+}
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar.navbar-light .breadcrumb .nav-item .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+/* jumbotron override */
+.jumbotron {
+  background: url("https://images.unsplash.com/photo-1606755655775-e43dc21b5012?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80")
+    no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  object-fit: contain;
+}
+
+/* skills container */
+.skills {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.html {
+  width: 90%;
+  background-color: #4caf50;
+}
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+.python {
+  width: 80%;
+  background-color: #808080;
+}
+
+.skill-container {
+  padding: 20px;
+  margin: 20px auto;
+}
+.img {
+  max-width: 180px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .display-4 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-height: 20em;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.works-container {
+  padding: 20px;
+  margin: 20px auto;
+}
+
+ul.timeline {
+  font-size: 20px;
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  margin: 0 auto;
+  /* The height is 400 pixels */
+  width: 75%;
+  /* The width is the width of the web page */
+}
+
+@media screen and (max-width: 600px) {
+  .col-8,
+  .col-4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
